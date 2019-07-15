@@ -320,6 +320,7 @@
     <Compile Include="Assets\script\item\TurningSlower.cs" />
     <Compile Include="Assets\script\Refrigerator\FeverTimeManagement.cs" />
     <Compile Include="Assets\script\RotateAround.cs" />
+    <Compile Include="Assets\script\UIFollow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
