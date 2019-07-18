@@ -12,7 +12,6 @@ public class GameManagement : MonoBehaviour {
     void Start() {
         Time.timeScale = 1.0f;
         topScreen.SetActive(false);
-        FeverScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,14 +26,7 @@ public class GameManagement : MonoBehaviour {
             SceneManager.LoadScene(0);
 
         }
-        if(FeverTimeManagement.FeverMode == true)
-        {
-            CameraFollow.smoothTime = 0.5f;
-        }
-        else if (FeverTimeManagement.FeverMode == false)
-        {
-            CameraFollow.smoothTime = 1.0f;
-        }
+
 
 
 

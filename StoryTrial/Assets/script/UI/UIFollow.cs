@@ -28,7 +28,6 @@ public class UIFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(theySay.text);
         Vector3 screenPos = cam.WorldToScreenPoint(CameraFollow.target.position) + new Vector3(offsetX, offsetY, 0);
         theySay.rectTransform.position = Vector3.SmoothDamp(theySay.rectTransform.position,screenPos,ref cameraVelocity,smoothTime);
 	}

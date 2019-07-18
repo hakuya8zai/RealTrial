@@ -45,7 +45,7 @@ public class FeverTimeManagement : MonoBehaviour {
         {
             FeverPower = FeverPower-n;
         }
-        print(FeverPower);
+
     }
 
 

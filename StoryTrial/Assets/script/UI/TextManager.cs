@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TextManager : MonoBehaviour {
-    public static GameObject TextPoint;
 
-    public static string[] StoryOne;
+
+    public static string[] StoryOne = new string[15];
 
 
 
 
 	// Use this for initialization
 	void Start () {
-        TextPoint = GameObject.Find("01");
+
         StoryOne[0] = ("出發！郊遊囉！總之先以那個亮亮的地方當作目的地吧！");
         StoryOne[1] = ("大姊，請您認真一點，我們現在可是肩負著國家的命運，要是失敗了……");
         StoryOne[2] = ("你的身體這麼僵硬可不行！要和我多學著點！你看，多麼光滑柔軟！");
@@ -26,6 +26,7 @@ public class TextManager : MonoBehaviour {
         StoryOne[10] = ("可是我還沒休息夠……");
         StoryOne[11] = ("……請加快速度。");
         StoryOne[12] = ("");
+
     }
 	
 	// Update is called once per frame
