@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2018.2.15f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -320,7 +322,9 @@
     <Compile Include="Assets\script\item\TurningSlower.cs" />
     <Compile Include="Assets\script\Refrigerator\FeverTimeManagement.cs" />
     <Compile Include="Assets\script\RotateAround.cs" />
-    <Compile Include="Assets\script\UIFollow.cs" />
+    <Compile Include="Assets\script\UI\TextChange.cs" />
+    <Compile Include="Assets\script\UI\TextManager.cs" />
+    <Compile Include="Assets\script\UI\UIFollow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
