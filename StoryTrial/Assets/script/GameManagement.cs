@@ -8,8 +8,10 @@ public class GameManagement : MonoBehaviour {
     public GameObject topScreen;
     // Use this for initialization
     public GameObject FeverScreen;
+    public static int levels = 0;
 
     void Start() {
+        levels = 0;
         Time.timeScale = 1.0f;
         topScreen.SetActive(false);
     }
@@ -18,12 +20,12 @@ public class GameManagement : MonoBehaviour {
     void Update() {
         if (RotateAround.GG == true)
         {
-            TimeBreak();
+            Reload();
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
 
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(levels);
 
         }
 
@@ -36,6 +38,16 @@ public class GameManagement : MonoBehaviour {
     {
         Time.timeScale = 0f;
         topScreen.SetActive(true);
+    }
+
+    public static void Reload()
+    {
+        SceneManager.LoadScene(levels);
+    }
+    public static void Nextload()
+    {
+        levels++;
+        SceneManager.LoadScene(levels);
     }
 
 

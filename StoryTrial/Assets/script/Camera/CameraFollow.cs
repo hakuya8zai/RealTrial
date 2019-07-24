@@ -14,14 +14,14 @@ public class CameraFollow : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        smoothTime = 1.0f;
+        smoothTime = 2.0f;
         mainCamera = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.SmoothDamp(transform.position, target.position + new Vector3(3, 5, -10), ref cameraVelocity, smoothTime);
+        transform.position = Vector3.SmoothDamp(transform.position, target.position + new Vector3(0, 0, -10), ref cameraVelocity, smoothTime);
         ///if (Input.GetKeyDown(KeyCode.Space))
         ///{
         ///    transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, transform.position.y, -9), ref cameraVelocity, smoothTimeToo);
