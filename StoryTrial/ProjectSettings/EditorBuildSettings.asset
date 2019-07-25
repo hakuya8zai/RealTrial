@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Chapters/Chapter00.unity
+    guid: 8248b13131158d940b3cdd6f6c6b4ac7
+  - enabled: 1
     path: Assets/Chapters/Chapter01.unity
     guid: 112de2215ce127247b922fcf74080aea
   - enabled: 1
     path: Assets/Chapters/Chapter02.unity
     guid: 8d1b4e6b628cbab4493f88eda68b535a
+  - enabled: 1
+    path: Assets/Chapters/Chapter03.unity
+    guid: 59851b5321377064795a3a1a25892692
   m_configObjects: {}

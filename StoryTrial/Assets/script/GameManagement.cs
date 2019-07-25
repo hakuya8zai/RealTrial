@@ -11,9 +11,11 @@ public class GameManagement : MonoBehaviour {
     public static int levels = 0;
 
     void Start() {
-        levels = 0;
+        levels = PlayerPrefs.GetInt("saveLevel");
         Time.timeScale = 1.0f;
         topScreen.SetActive(false);
+
+
     }
 
     // Update is called once per frame
@@ -22,12 +24,12 @@ public class GameManagement : MonoBehaviour {
         {
             Reload();
         }
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKey(KeyCode.R))
         {
-
-            SceneManager.LoadScene(levels);
-
+            levels = 0;
+            PlayerPrefs.SetInt("saveLevel", levels);
         }
+
 
 
 
@@ -47,8 +49,17 @@ public class GameManagement : MonoBehaviour {
     public static void Nextload()
     {
         levels++;
+        PlayerPrefs.SetInt("saveLevel",levels);
         SceneManager.LoadScene(levels);
     }
 
+    public static void OnEnable()
+    {///時間暫停
+        Time.timeScale = 0.0f;
+    }
+    public static void OnDisable()
+    {
+        Time.timeScale = 1.0f;
+    }
 
 }
