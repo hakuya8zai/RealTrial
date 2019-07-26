@@ -5,17 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameManagement : MonoBehaviour {
 
-    public GameObject topScreen;
     // Use this for initialization
     public GameObject FeverScreen;
     public static int levels = 0;
+    /// <summary>
+    /// level 為當前關卡數
+    /// saveLevel為儲存最高關卡數
+    /// </summary>
 
-    void Start() {
-        levels = PlayerPrefs.GetInt("saveLevel");
+    void Awake() {
         Time.timeScale = 1.0f;
-        topScreen.SetActive(false);
-
-
     }
 
     // Update is called once per frame
@@ -26,20 +25,17 @@ public class GameManagement : MonoBehaviour {
         }
         if (Input.GetKey(KeyCode.R))
         {
-            levels = 0;
+            levels = 1;
             PlayerPrefs.SetInt("saveLevel", levels);
         }
-
-
-
-
-
+        print(levels);
+        int s = PlayerPrefs.GetInt("saveLevel");
+        print(s);
     }
 
     public void TimeBreak()
     {
-        Time.timeScale = 0f;
-        topScreen.SetActive(true);
+        Time.timeScale = 0.0f;
     }
 
     public static void Reload()
@@ -49,7 +45,11 @@ public class GameManagement : MonoBehaviour {
     public static void Nextload()
     {
         levels++;
-        PlayerPrefs.SetInt("saveLevel",levels);
+        int a = PlayerPrefs.GetInt("saveLevel");
+        if (levels >= a)
+        {
+            PlayerPrefs.SetInt("saveLevel", levels);
+        }
         SceneManager.LoadScene(levels);
     }
 

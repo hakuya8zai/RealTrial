@@ -11,8 +11,7 @@ public class SceneManagement : MonoBehaviour {
     {
         if(FirstManagement == null)
         {
-            ///GameManagement.levels = 0;
-            ///PlayerPrefs.SetInt("saveLevel", GameManagement.levels);
+            GameManagement.levels = 0;
             print("LoadFirstScene");
             FirstManagement = this.gameObject;
             DontDestroyOnLoad(this.gameObject);

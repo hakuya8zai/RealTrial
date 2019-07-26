@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StartButtom : MonoBehaviour {
-
+    public GameObject selection;
+    public GameObject StartCanvas;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,7 +16,8 @@ public class StartButtom : MonoBehaviour {
 	}
     public void StartEvent()
     {
-        GameManagement.Nextload();
+        selection.SetActive(true);
+        StartCanvas.SetActive(false);
     }
     public void ContinueEvent()
     {
