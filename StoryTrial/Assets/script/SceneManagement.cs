@@ -15,6 +15,7 @@ public class SceneManagement : MonoBehaviour {
             print("LoadFirstScene");
             FirstManagement = this.gameObject;
             DontDestroyOnLoad(this.gameObject);
+            AdTest.adsCount = 0;
         }
         else if (FirstManagement != null)
         {

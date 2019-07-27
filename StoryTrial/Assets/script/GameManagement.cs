@@ -40,6 +40,13 @@ public class GameManagement : MonoBehaviour {
 
     public static void Reload()
     {
+
+        AdTest.adsCount++;
+        if (AdTest.adsCount >= 4)
+        {
+            AdTest.adsCount = 0;
+            AdTest.Inst.AdrealTest();
+        }
         SceneManager.LoadScene(levels);
     }
     public static void Nextload()
