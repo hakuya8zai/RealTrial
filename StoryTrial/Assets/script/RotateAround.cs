@@ -30,7 +30,7 @@ public class RotateAround : MonoBehaviour {
         GG = false;
         turnSpeed = 80.0f;
 
-        InvokeRepeating("SideTurn", 0.0f, 0.00002f);
+        InvokeRepeating("SideTurn", 1.0f, 0.000011f);
     }
 	
 	// Update is called once per frame
@@ -51,7 +51,7 @@ public class RotateAround : MonoBehaviour {
                     Invoke("CoreJudge", 0.0f);
                     CameraFollow.target = sideCube.transform;
                     CancelInvoke("SideTurn");
-                    InvokeRepeating("CoreTurn", 0.0f, 0.00002f);
+                    InvokeRepeating("CoreTurn", 0.0f, 0.000011f);
 
                 }
                 else if (Physics.Raycast(coreRay, out coreHit) == true && origin == false)
@@ -59,7 +59,7 @@ public class RotateAround : MonoBehaviour {
                     Invoke("SideJudge", 0.0f);
                     CameraFollow.target = coreCube.transform;
                     CancelInvoke("CoreTurn");
-                    InvokeRepeating("SideTurn", 0.0f, 0.00002f);
+                    InvokeRepeating("SideTurn", 0.0f, 0.000011f);
 
                 }
                 else
