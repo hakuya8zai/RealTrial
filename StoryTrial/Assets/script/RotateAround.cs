@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class RotateAround : MonoBehaviour {
     public GameObject coreCube;
@@ -42,8 +43,16 @@ public class RotateAround : MonoBehaviour {
 
         
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButtonDown(0))
             {
+
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                Debug.Log("onUI");
+            }
+            else
+            {
+                Debug.Log("onObject");
 
 
                 if (Physics.Raycast(sideRay, out sideHit) == true && origin == true)
@@ -66,6 +75,8 @@ public class RotateAround : MonoBehaviour {
                 {
                     GG = true;
                 }
+            }
+
 
             }
             
