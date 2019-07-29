@@ -9,7 +9,7 @@ namespace ActionCode2D.Renderers
         public bool enableOnAwake = true;
         public bool singleColorShader = true;
         [Range(0.001f, 1f)] public float updateInterval = 0.001f;
-        [Range(1, 100)] public int ghosts = 4;
+        [Range(1, 100)] public static int ghosts = 25;
 
         [SerializeField] private SpriteRenderer _spriteRenderer;
         private SpriteRenderer[] _ghostRenderers;
@@ -29,6 +29,8 @@ namespace ActionCode2D.Renderers
         }
         private void Update()
         {
+            ghosts = 3 * (AdTest.adsCount-2) +3;
+
             _currentTime += Time.deltaTime;
             if (_currentTime > updateInterval)
             {
@@ -38,6 +40,8 @@ namespace ActionCode2D.Renderers
                 PlaceGhost(_ghostRenderers[_ghostIndex]);
             }
         }
+
+
 
         private void OnEnable()
         {

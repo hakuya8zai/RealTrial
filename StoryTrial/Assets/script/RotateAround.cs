@@ -41,44 +41,48 @@ public class RotateAround : MonoBehaviour {
         coreRay = new Ray(coreCube.transform.position, new Vector3(0, 0, 1));
         sideRay = new Ray(sideCube.transform.position, new Vector3(0, 0, 1));
 
-        
-
-            if (Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButtonDown(0))
+        if(Input.touchCount <= 0) { return; }
+        else if (Input.touchCount >= 1)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) || Input.touches[0].phase == TouchPhase.Began)
             {
 
-            if (EventSystem.current.IsPointerOverGameObject())
-            {
-                Debug.Log("onUI");
-            }
-            else
-            {
-                Debug.Log("onObject");
-
-
-                if (Physics.Raycast(sideRay, out sideHit) == true && origin == true)
+                if (EventSystem.current.IsPointerOverGameObject())
                 {
-                    Invoke("CoreJudge", 0.0f);
-                    CameraFollow.target = sideCube.transform;
-                    CancelInvoke("SideTurn");
-                    InvokeRepeating("CoreTurn", 0.0f, 0.000011f);
-
-                }
-                else if (Physics.Raycast(coreRay, out coreHit) == true && origin == false)
-                {
-                    Invoke("SideJudge", 0.0f);
-                    CameraFollow.target = coreCube.transform;
-                    CancelInvoke("CoreTurn");
-                    InvokeRepeating("SideTurn", 0.0f, 0.000011f);
-
+                    Debug.Log("onUI");
                 }
                 else
                 {
-                    GG = true;
+                    Debug.Log("onObject");
+
+
+                    if (Physics.Raycast(sideRay, out sideHit) == true && origin == true)
+                    {
+                        Invoke("CoreJudge", 0.0f);
+                        CameraFollow.target = sideCube.transform;
+                        CancelInvoke("SideTurn");
+                        InvokeRepeating("CoreTurn", 0.0f, 0.000011f);
+
+                    }
+                    else if (Physics.Raycast(coreRay, out coreHit) == true && origin == false)
+                    {
+                        Invoke("SideJudge", 0.0f);
+                        CameraFollow.target = coreCube.transform;
+                        CancelInvoke("CoreTurn");
+                        InvokeRepeating("SideTurn", 0.0f, 0.000011f);
+
+                    }
+                    else
+                    {
+                        GG = true;
+                    }
                 }
-            }
 
 
             }
+        }
+
+
             
 
 

@@ -5,12 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class SelectButtoms : MonoBehaviour {
     public GameObject removeObject;
-    // Use this for initialization
+    public GameObject playingCanvas;
+    public GameObject pauseCanvas;
     public int Key;
     public int Lock;
+    private void Awake()
+    {
+        Key = PlayerPrefs.GetInt("saveLevel");
+        if (Key <= 1)
+        {
+            Key = 1;
+            PlayerPrefs.SetInt("saveLevel", Key);
+            PlayerPrefs.SetInt("HP", 11);
+            AdTest.adsCount = PlayerPrefs.GetInt("HP");
+        }
+    }
+
+    private void Start()
+    {
+    }
+
     public void SelectOver()
     {
         removeObject.SetActive(false);
+        UIManager.UIOpen = false;
+        playingCanvas.SetActive(true);
     }
     public void ChapterOneButtom()
     {

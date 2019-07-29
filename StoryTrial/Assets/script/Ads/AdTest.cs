@@ -81,7 +81,8 @@ public class AdTest : MonoBehaviour {
             if (AdTest.Inst.IsAdReady)
             {
                 AdTest.Inst.ShowRewardAD(GiveResult);
-                adsCount = 0;
+                adsCount = 11;
+                PlayerPrefs.SetInt("HP", adsCount);
             }
             else
             {

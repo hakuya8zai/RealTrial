@@ -22,7 +22,7 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.SmoothDamp(transform.position,new Vector3((target.position.x+board.transform.position.x)/2, target.position.y, target.position.z - 10), ref cameraVelocity, smoothTime);
+        transform.position = Vector3.SmoothDamp(transform.position,new Vector3((target.position.x+board.transform.position.x)/2, (target.position.y + board.transform.position.y) / 2, target.position.z - 10), ref cameraVelocity, smoothTime);
         ///if (Input.GetKeyDown(KeyCode.Space))
         ///{
         ///    transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, transform.position.y, -9), ref cameraVelocity, smoothTimeToo);

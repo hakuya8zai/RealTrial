@@ -7,14 +7,23 @@ public class GameManagement : MonoBehaviour {
 
     // Use this for initialization
     public GameObject FeverScreen;
-    public static int levels = 0;
+    public static int levels = 1;
     /// <summary>
     /// level 為當前關卡數
     /// saveLevel為儲存最高關卡數
     /// </summary>
+    public static bool ChangeCount = true;
+
+    
 
     void Awake() {
         Time.timeScale = 1.0f;
+    }
+
+    private void Start()
+    {
+
+        AdTest.adsCount = PlayerPrefs.GetInt("HP");
     }
 
     // Update is called once per frame
@@ -22,6 +31,7 @@ public class GameManagement : MonoBehaviour {
         if (RotateAround.GG == true)
         {
             Reload();
+            RotateAround.GG = false;
         }
         if (Input.GetKey(KeyCode.R))
         {
@@ -31,6 +41,12 @@ public class GameManagement : MonoBehaviour {
         print(levels);
         int s = PlayerPrefs.GetInt("saveLevel");
         print(s);
+        if (UIManager.UIOpen == true)
+        { OnEnable(); }
+        else
+        { OnDisable(); }
+
+        print(("ads") + AdTest.adsCount);
     }
 
     public void TimeBreak()
@@ -40,11 +56,13 @@ public class GameManagement : MonoBehaviour {
 
     public static void Reload()
     {
-
-        AdTest.adsCount++;
-        if (AdTest.adsCount >= 4)
+        AdTest.adsCount = AdTest.adsCount-1;
+        PlayerPrefs.SetInt("HP", AdTest.adsCount);
+        print(AdTest.adsCount);
+        if (AdTest.adsCount <= 0)
         {
-            AdTest.adsCount = 0;
+            AdTest.adsCount = 11;
+            PlayerPrefs.SetInt("HP", AdTest.adsCount);
             AdTest.Inst.AdrealTest();
         }
         SceneManager.LoadScene(levels);
@@ -68,5 +86,6 @@ public class GameManagement : MonoBehaviour {
     {
         Time.timeScale = 1.0f;
     }
+
 
 }
