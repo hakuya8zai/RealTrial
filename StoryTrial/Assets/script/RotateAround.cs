@@ -44,10 +44,10 @@ public class RotateAround : MonoBehaviour {
         if(Input.touchCount <= 0) { return; }
         else if (Input.touchCount >= 1)
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.touches[0].phase == TouchPhase.Began)
+            if (Input.touches[0].phase == TouchPhase.Began)
             {
-
-                if (EventSystem.current.IsPointerOverGameObject())
+                
+                if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
                 {
                     Debug.Log("onUI");
                 }

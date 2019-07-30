@@ -56,6 +56,7 @@ public class GameManagement : MonoBehaviour {
 
     public static void Reload()
     {
+        AdTest.adsCount = PlayerPrefs.GetInt("HP");
         AdTest.adsCount = AdTest.adsCount-1;
         PlayerPrefs.SetInt("HP", AdTest.adsCount);
         print(AdTest.adsCount);
