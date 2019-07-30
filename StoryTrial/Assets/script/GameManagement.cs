@@ -70,6 +70,7 @@ public class GameManagement : MonoBehaviour {
     }
     public static void Nextload()
     {
+        DeadBodyManager.ClearBody();
         levels++;
         int a = PlayerPrefs.GetInt("saveLevel");
         if (levels >= a)

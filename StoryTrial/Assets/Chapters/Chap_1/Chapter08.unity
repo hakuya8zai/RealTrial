@@ -390,6 +390,21 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 842402616}
+    - target: {fileID: 4535582313773816129, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535582313773816129, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4535582313773816129, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fda9c0901c98984ba6326a227e271c3, type: 3}
 --- !u!1001 &353075052

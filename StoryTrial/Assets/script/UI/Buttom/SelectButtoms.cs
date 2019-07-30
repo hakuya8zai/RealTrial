@@ -27,6 +27,7 @@ public class SelectButtoms : MonoBehaviour {
 
     public void SelectOver()
     {
+        DeadBodyManager.ClearBody();
         removeObject.SetActive(false);
         UIManager.UIOpen = false;
         playingCanvas.SetActive(true);

@@ -74,6 +74,7 @@ public class RotateAround : MonoBehaviour {
                     }
                     else
                     {
+
                         GG = true;
                     }
                 }
@@ -121,6 +122,9 @@ public class RotateAround : MonoBehaviour {
         }
         else if (sideHit.collider.gameObject.CompareTag("filled"))
         {
+            DeadBodyManager.DeadPos = sideCube.transform.position;
+            DeadBodyManager.DeadRotation = sideCube.transform.rotation;
+            DeadBodyManager.blackBorn = true;
             GG = true;
         }
         else if (sideHit.collider.gameObject.CompareTag("End"))
@@ -129,6 +133,9 @@ public class RotateAround : MonoBehaviour {
         }
         else
         {
+            DeadBodyManager.DeadPos = sideCube.transform.position;
+            DeadBodyManager.DeadRotation = sideCube.transform.rotation;
+            DeadBodyManager.blackBorn = true;
             GG = true;
         }
 
@@ -141,6 +148,9 @@ public class RotateAround : MonoBehaviour {
         coreCube.tag = ("core");
         if(coreHit.collider.gameObject.CompareTag("filled") )
         {
+            DeadBodyManager.DeadPos = coreCube.transform.position;
+            DeadBodyManager.DeadRotation = coreCube.transform.rotation;
+            DeadBodyManager.whiteBorn = true;
             GG = true;
         }
         else if(coreHit.collider.gameObject.CompareTag("unfill"))
@@ -157,6 +167,9 @@ public class RotateAround : MonoBehaviour {
         }
         else
         {
+            DeadBodyManager.DeadPos = coreCube.transform.position;
+            DeadBodyManager.DeadRotation = coreCube.transform.rotation;
+            DeadBodyManager.whiteBorn = true;
             GG = true;
         }
 

@@ -278,6 +278,11 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 1436807612}
+    - target: {fileID: 4535582313773816129, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fda9c0901c98984ba6326a227e271c3, type: 3}
 --- !u!1 &867037916
@@ -715,6 +720,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1277218921337470, guid: ee6c6b0b5bc574e43b57db1889b13393, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4865939823030148, guid: ee6c6b0b5bc574e43b57db1889b13393, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.5
@@ -745,7 +754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4865939823030148, guid: ee6c6b0b5bc574e43b57db1889b13393, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee6c6b0b5bc574e43b57db1889b13393, type: 3}
@@ -866,7 +875,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1567939969
 GameObject:
@@ -1017,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4675868049346182, guid: 4c315de4b87cc16429f2bed70c3b043c, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c315de4b87cc16429f2bed70c3b043c, type: 3}
@@ -1307,7 +1316,7 @@ RectTransform:
   m_Children:
   - {fileID: 1253098670}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

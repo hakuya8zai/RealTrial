@@ -349,6 +349,7 @@
     <Compile Include="Assets\script\Camera\CameraZoom.cs" />
     <Compile Include="Assets\script\Camera\ScreenFit.cs" />
     <Compile Include="Assets\script\CompareCube.cs" />
+    <Compile Include="Assets\script\DeadBodyManager.cs" />
     <Compile Include="Assets\script\effect\dotest.cs" />
     <Compile Include="Assets\script\EndJudge.cs" />
     <Compile Include="Assets\script\EndManagement.cs" />

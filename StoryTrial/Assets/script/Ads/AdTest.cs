@@ -14,7 +14,7 @@ public class AdTest : MonoBehaviour {
 
     public bool IsAdReady = false;
 
-    public static int adsCount;
+    public static int adsCount = 11;
 
 	// Use this for initialization
 	void Start () {
