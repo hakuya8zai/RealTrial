@@ -115,13 +115,27 @@ public class RotateAround : MonoBehaviour {
         sideCube.tag = ("core");
         if(sideHit.collider.gameObject.CompareTag("unfill"))
         {
-            sideCube.transform.position = new Vector3(sideHit.transform.position.x, sideHit.transform.position.y, sideCube.transform.position.z);
-            CubeReturn();
-            sideHit.collider.gameObject.tag = ("filled");
+
+            if ((sideHit.transform.position - coreCube.transform.position).sqrMagnitude > 9.1f)
+            {
+                print((sideHit.transform.position - coreCube.transform.position).sqrMagnitude);
+                DeadBodyManager.DeadPos = sideCube.transform.position;
+                DeadBodyManager.DeadRotation = sideCube.transform.rotation;
+                DeadBodyManager.blackBorn = true;
+                GG = true;
+            }
+            else if ((sideHit.transform.position - coreCube.transform.position).sqrMagnitude <= 9.1f)
+            {
+                sideCube.transform.position = new Vector3(sideHit.transform.position.x, sideHit.transform.position.y, sideCube.transform.position.z);
+                CubeReturn();
+                sideHit.collider.gameObject.tag = ("filled");
+            }
+
 
         }
         else if (sideHit.collider.gameObject.CompareTag("filled"))
         {
+
             DeadBodyManager.DeadPos = sideCube.transform.position;
             DeadBodyManager.DeadRotation = sideCube.transform.rotation;
             DeadBodyManager.blackBorn = true;
@@ -155,10 +169,21 @@ public class RotateAround : MonoBehaviour {
         }
         else if(coreHit.collider.gameObject.CompareTag("unfill"))
         {
+            if ((coreHit.transform.position - sideCube.transform.position).sqrMagnitude > 9.1f)
+            {
+                print((coreHit.transform.position - sideCube.transform.position).sqrMagnitude);
+                DeadBodyManager.DeadPos = coreCube.transform.position;
+                DeadBodyManager.DeadRotation = coreCube.transform.rotation;
+                DeadBodyManager.whiteBorn = true;
+                GG = true;
+            }
+            else if ((coreHit.transform.position - sideCube.transform.position).sqrMagnitude <= 9.1f)
+            {
+                coreCube.transform.position = new Vector3(coreHit.transform.position.x, coreHit.transform.position.y, coreCube.transform.position.z);
+                CubeReturn();
+                coreHit.collider.gameObject.tag = ("filled");
+            }
 
-            coreCube.transform.position = new Vector3(coreHit.transform.position.x, coreHit.transform.position.y, coreCube.transform.position.z);
-            CubeReturn();
-            coreHit.collider.gameObject.tag = ("filled");
 
         }
         else if (coreHit.collider.gameObject.CompareTag("End"))
