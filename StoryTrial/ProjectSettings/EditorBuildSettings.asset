@@ -43,5 +43,20 @@ EditorBuildSettings:
     guid: 60e0a88351ee6e94f95b4be0ec30234e
   - enabled: 1
     path: Assets/Chapters/Chap_2/Chapter11.unity
+    guid: 00836b4aa25546b4d84a950c211c681c
+  - enabled: 1
+    path: Assets/Chapters/Chap_2/Chapter12.unity
+    guid: 9d346cb1e9da8fc439a2565bf8649d2f
+  - enabled: 1
+    path: Assets/Chapters/Chap_2/Chapter13.unity
+    guid: 48cb50420fbedff4d9b6f5d56ba007c8
+  - enabled: 1
+    path: Assets/Chapters/Chap_2/Chapter14.unity
+    guid: 2eb95d274b5813e42be60140de494c9c
+  - enabled: 1
+    path: Assets/Chapters/Chap_2/Chapter15.unity
     guid: e39b0df01e41201499db96405ef87f88
+  - enabled: 1
+    path: Assets/Chapters/Chap_2/Chapter16.unity
+    guid: 302d3ababd6cb5c468b95b6fc6e3b838
   m_configObjects: {}

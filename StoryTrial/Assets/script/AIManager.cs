@@ -6,17 +6,26 @@ using DG.Tweening;
 public class AIManager : MonoBehaviour
 {
     public GameObject theMonster;
-    public GameObject[] theRange = new GameObject[4];
+    public GameObject[] theRange;
+    public int ArrayLong;
     int i = 0;
     int s = 1;
     Ray AIRay;
     RaycastHit AIhit;
+    public bool circle = false;
+    public bool goback= false;
     
     // Start is called before the first frame update
     void Start()
     {
-
-        InvokeRepeating("MonsterMove", 1.0f, 0.5f);
+        if(circle == true)
+        {
+            InvokeRepeating("MonsterMoveCircle", 1.0f, 1.0f);
+        }
+        else if (goback == true)
+        {
+            InvokeRepeating("MonsterMove", 1.0f, 0.5f);
+        }
     }
 
     // Update is called once per frame
@@ -58,6 +67,18 @@ public class AIManager : MonoBehaviour
         theMonster.transform.DOMove(new Vector3(theRange[i].transform.position.x, theRange[i].transform.position.y, theMonster.transform.position.z), 0.3f);
         i = i + s;
 
+
+    }
+
+    void MonsterMoveCircle()
+    {
+        if(i > ArrayLong-1)
+        {
+            i = 0;
+            s = 1;
+        }
+        theMonster.transform.DOMove(new Vector3(theRange[i].transform.position.x, theRange[i].transform.position.y, theMonster.transform.position.z), 0.3f);
+        i = i + s;
 
     }
 }

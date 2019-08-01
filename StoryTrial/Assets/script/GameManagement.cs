@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManagement : MonoBehaviour {
 
     // Use this for initialization
-    public GameObject FeverScreen;
     public static int levels = 1;
     /// <summary>
     /// level 為當前關卡數
