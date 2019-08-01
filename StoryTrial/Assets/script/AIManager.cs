@@ -20,7 +20,7 @@ public class AIManager : MonoBehaviour
     {
         if(circle == true)
         {
-            InvokeRepeating("MonsterMoveCircle", 1.0f, 1.0f);
+            InvokeRepeating("MonsterMoveCircle", 1.0f, 1.5f);
         }
         else if (goback == true)
         {

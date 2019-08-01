@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
 
     public static Transform target;
     public GameObject board;
-    public static float smoothTime = 0.5f;
+    public static float smoothTime = 0.4f;
     public float smoothTimeToo = 0.1f; 
     private Vector3 cameraVelocity = Vector3.zero;
     private Camera mainCamera;
