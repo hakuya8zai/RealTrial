@@ -345,6 +345,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+    <Compile Include="Assets\ItemInst.cs" />
     <Compile Include="Assets\script\Ads\AdTest.cs" />
     <Compile Include="Assets\script\AIManager.cs" />
     <Compile Include="Assets\script\Camera\CameraFollow.cs" />
