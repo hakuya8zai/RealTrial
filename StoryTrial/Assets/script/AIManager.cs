@@ -24,7 +24,7 @@ public class AIManager : MonoBehaviour
         }
         else if (goback == true)
         {
-            InvokeRepeating("MonsterMove", 1.0f, 0.5f);
+            InvokeRepeating("MonsterMove", 1.0f, 1.5f);
         }
     }
 
@@ -59,7 +59,7 @@ public class AIManager : MonoBehaviour
         {
             s = 1;
         }
-        else if (i == 3)
+        else if (i == ArrayLong-1)
         {
             s = -1 ;
         }

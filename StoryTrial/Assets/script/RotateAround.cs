@@ -9,6 +9,7 @@ public class RotateAround : MonoBehaviour {
     public static float turnSpeed;
     public bool origin = true;
     public int n = 0;
+    public int _adsCount;
 
     Ray coreRay;
     Ray sideRay;
@@ -17,11 +18,9 @@ public class RotateAround : MonoBehaviour {
     public static bool GG = false;
 
 
-
-    // Use this for initialization
+    
     private void Awake()
     {
-
     }
 
     void Start () {
@@ -34,14 +33,19 @@ public class RotateAround : MonoBehaviour {
         InvokeRepeating("SideTurn", 1.0f, 0.000011f);
     }
 	
-	// Update is called once per frame
 	void Update () {
 
 
         coreRay = new Ray(coreCube.transform.position, new Vector3(0, 0, 1));
         sideRay = new Ray(sideCube.transform.position, new Vector3(0, 0, 1));
 
-        if(Input.touchCount <= 0) { return; }
+        if (_adsCount != AdTest.adsCount)
+        {
+            _adsCount = AdTest.adsCount;
+            ResetGhost();
+        }
+
+        if (Input.touchCount <= 0) { return; }
         else if (Input.touchCount >= 1)
         {
             if (Input.touches[0].phase == TouchPhase.Began)
@@ -216,7 +220,15 @@ public class RotateAround : MonoBehaviour {
 
     }
 
+    public void ResetGhost()
+    {
+        print("Reset");
+        coreCube.GetComponent<ActionCode2D.Renderers.SpriteGhostTrailRenderer>().enabled = false;
+        sideCube.GetComponent<ActionCode2D.Renderers.SpriteGhostTrailRenderer>().enabled = false;
+        coreCube.GetComponent<ActionCode2D.Renderers.SpriteGhostTrailRenderer>().enabled = true;
+        sideCube.GetComponent<ActionCode2D.Renderers.SpriteGhostTrailRenderer>().enabled = true;
 
+    }
 
 
 }

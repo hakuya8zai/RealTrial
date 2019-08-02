@@ -340,6 +340,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BoardsInst.cs" />
     <Compile Include="Assets\Chapters\Chap_2\Quit.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
@@ -356,6 +357,7 @@
     <Compile Include="Assets\script\EndManagement.cs" />
     <Compile Include="Assets\script\GameManagement.cs" />
     <Compile Include="Assets\script\item\ChangeTurningWay.cs" />
+    <Compile Include="Assets\script\item\CoinJudge.cs" />
     <Compile Include="Assets\script\item\TurningFaster.cs" />
     <Compile Include="Assets\script\item\TurningNormal.cs" />
     <Compile Include="Assets\script\item\TurningSlower.cs" />

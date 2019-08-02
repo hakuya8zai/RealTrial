@@ -22,11 +22,20 @@ namespace ActionCode2D.Renderers
             _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        private void Awake () 
-		{
+        private void Awake ()
+        {
             InicializeGhosts();
+            
             enabled = enableOnAwake;
         }
+        public void ReCall()
+        {
+            enabled = false;
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+            InicializeGhosts();
+            enabled = true;
+        }
+
         private void Update()
         {
             ghosts = 3 * (AdTest.adsCount-1) +3;
@@ -114,5 +123,8 @@ namespace ActionCode2D.Renderers
             ghost.flipY = _spriteRenderer.flipY;
             ghost.sprite = _spriteRenderer.sprite;
         }
+
+
+
 	}
 }

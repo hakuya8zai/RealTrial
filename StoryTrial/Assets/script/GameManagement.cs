@@ -17,12 +17,13 @@ public class GameManagement : MonoBehaviour {
 
     void Awake() {
         Time.timeScale = 1.0f;
+
+        AdTest.adsCount = PlayerPrefs.GetInt("HP");
     }
 
     private void Start()
     {
-
-        AdTest.adsCount = PlayerPrefs.GetInt("HP");
+        
     }
 
     // Update is called once per frame
