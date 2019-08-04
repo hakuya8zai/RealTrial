@@ -6,10 +6,14 @@ public class CompareCube : MonoBehaviour {
 
     public Renderer skin;
     public Material offskin;
+    ///public GameObject theLight;
+    
+    bool first = false;
     // Use this for initialization
 
     private void Awake()
     {
+        first = false;
         skin = GetComponent<Renderer>();
         this.gameObject.tag = ("unfill");
     }
@@ -18,15 +22,47 @@ public class CompareCube : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (this.CompareTag("filled"))
+        if (first == false)
         {
-            skin.material = new Material(offskin);
+            if (this.CompareTag("filled"))
+            {
+                skin.material = new Material(offskin);
+               /// LightOn();
+                BoardsInst.BornCall = true;
+                if(this.name == ("chosen"))
+                {
+                    for(int i = 0; i <= 10; i++)
+                    {
+                        ScoreManage.ScoreUp();
+                    }
+                }
+                else
+                {
+                    ScoreManage.ScoreUp();
+                }
+                first = true;
+            }
+            
         }
-        else
-        {
 
-        }
+
+
+
+
+
+
+
 	}
+
+    ///void LightOn()
+    ///{
+    ///    theLight.SetActive(true);
+    ///    Invoke(("LightOff"), 0.3f);
+    ///}
+    ///void LightOff()
+    ///{
+    ///    theLight.SetActive(false);
+    ///}
 
 
     

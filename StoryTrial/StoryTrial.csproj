@@ -341,11 +341,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BoardsInst.cs" />
-    <Compile Include="Assets\Chapters\Chap_2\Quit.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
     <Compile Include="Assets\ItemInst.cs" />
+    <Compile Include="Assets\ParticleLight\Scripts\UVScroller_C.cs" />
+    <Compile Include="Assets\ScoreManage.cs" />
     <Compile Include="Assets\script\Ads\AdTest.cs" />
     <Compile Include="Assets\script\AIManager.cs" />
     <Compile Include="Assets\script\Camera\CameraFollow.cs" />
@@ -385,6 +386,8 @@
     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
     <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
+    <None Include="Assets\ParticleLight\Read Me\Read Me.txt" />
+    <None Include="Assets\ParticleLight\Shader\AdditiveMask.shader" />
     <None Include="Assets\adss\UnityAds\link.xml" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />

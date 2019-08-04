@@ -10,6 +10,8 @@ public class BoardsInst : MonoBehaviour
     int X = 0;
     int Y = 0;
 
+    public static bool BornCall = false;
+    private Ray ifBornRay;
 
     int theFour = 1;
     private int theRandom_a;
@@ -19,12 +21,13 @@ public class BoardsInst : MonoBehaviour
     //x要*3
     private void Awake()
     {
-        boardsDeleteCount = 5;
+        BornCall = false;
+
     }
 
     void Start()
     {
-        for(int i = 0; i < 30; i++)
+        for(int i = 0; i < 1; i++)
         {
             BoardsBorn();
         }
@@ -34,6 +37,29 @@ public class BoardsInst : MonoBehaviour
     
     void Update()
     {//如果分數高於多少，deletecount增加
+
+        if (BornCall == true)
+        {
+            BornCall = false;
+            BornTest();
+        }
+
+
+        if (ScoreManage.score <= 10)
+        { boardsDeleteCount = 0; }
+        else if (ScoreManage.score <= 60 && ScoreManage.score > 10)
+        { boardsDeleteCount = 1; }
+        else if (ScoreManage.score <= 150 && ScoreManage.score > 60)
+        { boardsDeleteCount = 2; }
+        else if (ScoreManage.score <= 250 && ScoreManage.score > 150)
+        { boardsDeleteCount = 3; }
+        else if (ScoreManage.score <= 400 && ScoreManage.score > 250)
+        { boardsDeleteCount = 4; }
+        else if (ScoreManage.score > 400)
+        { boardsDeleteCount = 5; }
+
+
+
     }
 
     void BoardsBorn()
@@ -338,4 +364,23 @@ public class BoardsInst : MonoBehaviour
 
 
     }
+
+    public void BornTest()
+    {
+        
+
+            ifBornRay = new Ray(new Vector3(-5, CameraFollow.target.transform.position.y + 21, 0.2f), new Vector3(1, 0, 0));
+            if (Physics.Raycast(ifBornRay) == false)
+            {
+                BoardsBorn();
+            }
+            
+        
+
+
+
+
+
+    }
+
 }

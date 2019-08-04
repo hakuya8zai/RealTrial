@@ -4,24 +4,32 @@ using UnityEngine;
 
 public class TurningFaster : MonoBehaviour {
 
-	// Use this for initialization
+    // Use this for initialization
+    bool first = true;
+
 	void Start () {
-        this.gameObject.GetComponent<TurningFaster>().enabled = true;
+        ///this.gameObject.GetComponent<TurningFaster>().enabled = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(this.CompareTag("filled"))
+        if(first == true)
         {
-            Invoke(("ChangeAndStop"),0.0f);
+            if (this.CompareTag("filled"))
+            {
+                Invoke(("ChangeAndStop"), 0.0f);
+                first = false;
+            }
         }
+
+
 	}
 
 
     void ChangeAndStop()
     {
-        RotateAround.turnSpeed = 120.0f;
-        this.gameObject.GetComponent<TurningFaster>().enabled = false;
+        RotateAround.turnSpeed = RotateAround.turnSpeed + 20.0f;
+        ///this.gameObject.GetComponent<TurningFaster>().enabled = false;
     }
 
 }

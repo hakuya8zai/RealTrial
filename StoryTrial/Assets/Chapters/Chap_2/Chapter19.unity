@@ -1368,6 +1368,11 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 160046059}
+    - target: {fileID: 4255472804590758095, guid: 7a4994dee8627b04092aa2cd259f0c1a,
+        type: 3}
+      propertyPath: Mode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a4994dee8627b04092aa2cd259f0c1a, type: 3}
 --- !u!1 &1008177394
@@ -2073,6 +2078,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 557883723, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038209383, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1038209384, guid: c27e095b24192544e870df39c7767f3f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 9
@@ -2477,6 +2490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051283270708042085, guid: 51e8c1cbdb62fa84699308e366704169,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7051283270708042081, guid: 51e8c1cbdb62fa84699308e366704169,
         type: 3}

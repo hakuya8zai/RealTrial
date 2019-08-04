@@ -316,6 +316,11 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 978243977}
+    - target: {fileID: 4255472804590758095, guid: 7a4994dee8627b04092aa2cd259f0c1a,
+        type: 3}
+      propertyPath: Mode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a4994dee8627b04092aa2cd259f0c1a, type: 3}
 --- !u!1001 &62042949

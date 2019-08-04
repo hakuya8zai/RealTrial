@@ -251,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &389991886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -363,6 +364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &485620954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -475,6 +477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &723530011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -587,6 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &739876463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -699,6 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &749261167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -852,6 +857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &772665157
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -964,6 +970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &779271142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1076,6 +1083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &886164102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1188,6 +1196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &915462431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1300,6 +1309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &950298610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1412,6 +1422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &977170220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1524,6 +1535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1136281267
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1636,6 +1648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1470174905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1754,6 +1767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1549356310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1822,6 +1836,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: board
+      value: 
+      objectReference: {fileID: 359746747}
+    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4318929449969632, guid: 6fda9c0901c98984ba6326a227e271c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -1859,16 +1888,6 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 359746747}
-    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
-        type: 3}
-      propertyPath: board
-      value: 
-      objectReference: {fileID: 359746747}
-    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fda9c0901c98984ba6326a227e271c3, type: 3}
 --- !u!1 &1830702148
@@ -1922,6 +1941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1830702151
 BoxCollider:
   m_ObjectHideFlags: 0

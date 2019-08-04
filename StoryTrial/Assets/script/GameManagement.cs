@@ -62,7 +62,7 @@ public class GameManagement : MonoBehaviour {
         print(AdTest.adsCount);
         if (AdTest.adsCount <= 0)
         {
-            AdTest.adsCount = 11;
+            AdTest.adsCount = 5;
             PlayerPrefs.SetInt("HP", AdTest.adsCount);
             AdTest.Inst.AdrealTest();
         }

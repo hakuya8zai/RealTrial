@@ -5,24 +5,31 @@ using UnityEngine;
 public class TurningSlower : MonoBehaviour {
 
     // Use this for initialization
+    bool first = true;
     void Start()
     {
-        this.gameObject.GetComponent<TurningSlower>().enabled = true;
+        ///this.gameObject.GetComponent<TurningSlower>().enabled = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (this.CompareTag("filled"))
+
+
+        if (first == true)
         {
-            Invoke(("ChangeAndStop"), 0.0f);
+            if (this.CompareTag("filled"))
+            {
+                Invoke(("ChangeAndStop"), 0.0f);
+                first = false;
+            }
         }
     }
 
 
     void ChangeAndStop()
     {
-        RotateAround.turnSpeed = 40.0f;
-        this.gameObject.GetComponent<TurningSlower>().enabled = false;
+        RotateAround.turnSpeed = RotateAround.turnSpeed - 40.0f;
+        ///this.gameObject.GetComponent<TurningSlower>().enabled = false;
     }
 }

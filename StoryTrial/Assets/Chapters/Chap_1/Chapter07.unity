@@ -119,10 +119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4762124670340550, guid: ee6c6b0b5bc574e43b57db1889b13393, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4865939823030148, guid: ee6c6b0b5bc574e43b57db1889b13393, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.5
@@ -154,6 +150,10 @@ PrefabInstance:
     - target: {fileID: 4865939823030148, guid: ee6c6b0b5bc574e43b57db1889b13393, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4762124670340550, guid: ee6c6b0b5bc574e43b57db1889b13393, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee6c6b0b5bc574e43b57db1889b13393, type: 3}
@@ -220,6 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &405776397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -332,6 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &408723826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -580,6 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &631012831
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -733,6 +736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &686552583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -845,6 +849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &924593949
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -998,6 +1003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1005182675
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1110,6 +1116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1123325837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1222,6 +1229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1324235140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1334,6 +1342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1511533244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1446,6 +1455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1560388250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1558,6 +1568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1583563505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1670,6 +1681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1587235995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1823,6 +1835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1703228860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1935,6 +1948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1826336070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2047,6 +2061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &1877991760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2121,6 +2136,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: board
+      value: 
+      objectReference: {fileID: 1913446495}
+    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4318929449969632, guid: 6fda9c0901c98984ba6326a227e271c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.84
@@ -2158,16 +2188,6 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 1913446495}
-    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
-        type: 3}
-      propertyPath: board
-      value: 
-      objectReference: {fileID: 1913446495}
-    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fda9c0901c98984ba6326a227e271c3, type: 3}
 --- !u!1 &2005736681
@@ -2221,6 +2241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
   offskin: {fileID: 2100000, guid: 7f441b4ac3fe1bf43acf371977a116e2, type: 2}
+  theLight: {fileID: 0}
 --- !u!65 &2005736684
 BoxCollider:
   m_ObjectHideFlags: 0

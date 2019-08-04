@@ -777,6 +777,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: board
+      value: 
+      objectReference: {fileID: 1869209225}
+    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
+        type: 3}
+      propertyPath: Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4318929449969632, guid: 6fda9c0901c98984ba6326a227e271c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -814,16 +829,6 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 1869209225}
-    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
-        type: 3}
-      propertyPath: board
-      value: 
-      objectReference: {fileID: 1869209225}
-    - target: {fileID: 4573107191984009373, guid: 6fda9c0901c98984ba6326a227e271c3,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fda9c0901c98984ba6326a227e271c3, type: 3}
 --- !u!1001 &1350417606
@@ -1130,11 +1135,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114968222743666856, guid: 8f334eb8523c99b48a593e260a603e30,
-        type: 3}
-      propertyPath: CheckPoint.Array.data[0]
-      value: 
-      objectReference: {fileID: 2091039908}
     - target: {fileID: 114639606116357594, guid: 8f334eb8523c99b48a593e260a603e30,
         type: 3}
       propertyPath: boards.Array.data[0]
@@ -1210,6 +1210,11 @@ PrefabInstance:
       propertyPath: boards.Array.data[7]
       value: 
       objectReference: {fileID: 1512756163}
+    - target: {fileID: 114968222743666856, guid: 8f334eb8523c99b48a593e260a603e30,
+        type: 3}
+      propertyPath: CheckPoint.Array.data[0]
+      value: 
+      objectReference: {fileID: 2091039908}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f334eb8523c99b48a593e260a603e30, type: 3}
 --- !u!1 &1845265239 stripped

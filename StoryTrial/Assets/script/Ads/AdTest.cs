@@ -14,7 +14,7 @@ public class AdTest : MonoBehaviour {
 
     public bool IsAdReady = false;
 
-    public static int adsCount = 11;
+    public static int adsCount = 5;
 
 	// Use this for initialization
 	void Start () {
@@ -81,7 +81,7 @@ public class AdTest : MonoBehaviour {
             if (AdTest.Inst.IsAdReady)
             {
                 AdTest.Inst.ShowRewardAD(GiveResult);
-                adsCount = 11;
+                adsCount = 5;
                 PlayerPrefs.SetInt("HP", adsCount);
             }
             else

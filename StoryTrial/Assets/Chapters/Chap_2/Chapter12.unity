@@ -614,6 +614,11 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 919929676}
+    - target: {fileID: 4255472804590758095, guid: 7a4994dee8627b04092aa2cd259f0c1a,
+        type: 3}
+      propertyPath: Mode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a4994dee8627b04092aa2cd259f0c1a, type: 3}
 --- !u!1001 &418528865
@@ -1070,6 +1075,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 557883723, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038209383, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038209384, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: theRange.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: circle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: goback
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: theRange.Array.data[1]
+      value: 
+      objectReference: {fileID: 960703071}
+    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: theRange.Array.data[0]
+      value: 
+      objectReference: {fileID: 1379070313}
+    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: ArrayLong
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7283860972460146693, guid: c27e095b24192544e870df39c7767f3f,
         type: 3}
       propertyPath: boards.Array.size
@@ -1175,34 +1216,6 @@ PrefabInstance:
       propertyPath: end.Array.data[0]
       value: 
       objectReference: {fileID: 1918602496}
-    - target: {fileID: 1038209384, guid: c27e095b24192544e870df39c7767f3f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
-      propertyPath: theRange.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
-      propertyPath: circle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
-      propertyPath: goback
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
-      propertyPath: theRange.Array.data[1]
-      value: 
-      objectReference: {fileID: 960703071}
-    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
-      propertyPath: theRange.Array.data[0]
-      value: 
-      objectReference: {fileID: 1379070313}
-    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
-      propertyPath: ArrayLong
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c27e095b24192544e870df39c7767f3f, type: 3}
 --- !u!1 &910408567
@@ -1878,7 +1891,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302200110}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ae03d3d02214884b821e208e15260b3, type: 3}
   m_Name: 
@@ -1927,7 +1940,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3ffbb1b47c43db7418ad832a344e4955, type: 2}
+  - {fileID: 2100000, guid: fe2e6569063005643bdb3a348abf4e18, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

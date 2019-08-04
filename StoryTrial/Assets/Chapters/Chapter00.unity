@@ -272,8 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6703c981df12f45a2ef75ac4a35134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FeverScreen: {fileID: 1770797717730690, guid: 7c16f5ac198bcf142bab6365c99128f1,
-    type: 3}
 --- !u!4 &405616486
 Transform:
   m_ObjectHideFlags: 0
@@ -378,7 +376,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 74776960cd0d9594788ee5f711833c3d, type: 3}
     m_FontSize: 94
     m_FontStyle: 0
     m_BestFit: 0
@@ -732,6 +730,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WontDestroy
       objectReference: {fileID: 0}
+    - target: {fileID: 2929248850570135633, guid: 74e4305a5b53da240be04d9e7efd0ab1,
+        type: 3}
+      propertyPath: StartCanvas
+      value: 
+      objectReference: {fileID: 1341066015}
     - target: {fileID: 785844322196332100, guid: 74e4305a5b53da240be04d9e7efd0ab1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -787,11 +790,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2929248850570135633, guid: 74e4305a5b53da240be04d9e7efd0ab1,
+    - target: {fileID: 3627068924012523300, guid: 74e4305a5b53da240be04d9e7efd0ab1,
         type: 3}
-      propertyPath: StartCanvas
+      propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 1341066015}
+      objectReference: {fileID: 12800000, guid: 74776960cd0d9594788ee5f711833c3d,
+        type: 3}
+    - target: {fileID: 9212222950357775973, guid: 74e4305a5b53da240be04d9e7efd0ab1,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 74776960cd0d9594788ee5f711833c3d,
+        type: 3}
+    - target: {fileID: 746774236492099747, guid: 74e4305a5b53da240be04d9e7efd0ab1,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 74776960cd0d9594788ee5f711833c3d,
+        type: 3}
+    - target: {fileID: 2428733378233614069, guid: 74e4305a5b53da240be04d9e7efd0ab1,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 74776960cd0d9594788ee5f711833c3d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74e4305a5b53da240be04d9e7efd0ab1, type: 3}
 --- !u!1001 &4531101207266570251
