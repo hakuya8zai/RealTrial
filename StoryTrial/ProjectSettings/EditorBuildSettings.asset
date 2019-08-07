@@ -101,7 +101,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Chapters/Chap_3/Chapter30.unity
     guid: a4603251d73a92642ba528f8728c59d9
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter31.unity
+    guid: b72577b34cd1d4e428e0d4f50ef76c81
   - enabled: 0
     path: Assets/Chapters/AiBuild.unity
     guid: c21c46ea8ab647341a84a939fe96b185
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter32.unity
+    guid: ed47964b9ec49d74a89f75a90b856403
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter33.unity
+    guid: a66b8ba5b2860f446bfe447fc11b7953
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter34.unity
+    guid: bf045264e290a0042a4a4e60e7ced330
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter35.unity
+    guid: eab5b2c00a98e3f408994e63755c5dae
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter36.unity
+    guid: fffa48988565a4c499518ec76ec75fd1
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter37.unity
+    guid: 124b037e664b8714fb28adfbb394ca1e
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter38.unity
+    guid: 3f4bbd54d06f3844e882d411285b6901
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter39.unity
+    guid: b1446f30791c4064e9a48f2ad7593dc0
+  - enabled: 1
+    path: Assets/Chapters/Chap_4/Chapter40.unity
+    guid: fc45a06854da5ca41a8b9a636dcd9220
   m_configObjects: {}
