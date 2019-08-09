@@ -2115,6 +2115,7 @@ GameObject:
   - component: {fileID: 1021014161}
   - component: {fileID: 1021014160}
   - component: {fileID: 1021014164}
+  - component: {fileID: 1021014165}
   m_Layer: 0
   m_Name: Board (17)
   m_TagString: unfill
@@ -2218,6 +2219,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dde5e1744d5889b43888a5fc8c50c36b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1021014165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021014158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f582db26ec89249a45be6efd15fc51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1029744883
@@ -3668,14 +3681,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1038209384, guid: c27e095b24192544e870df39c7767f3f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
-      propertyPath: circle
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7283860972460146693, guid: c27e095b24192544e870df39c7767f3f,
         type: 3}
       propertyPath: boards.Array.size
@@ -3776,6 +3781,14 @@ PrefabInstance:
       propertyPath: end.Array.data[0]
       value: 
       objectReference: {fileID: 1021014158}
+    - target: {fileID: 1038209384, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 557883724, guid: c27e095b24192544e870df39c7767f3f, type: 3}
+      propertyPath: circle
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c27e095b24192544e870df39c7767f3f, type: 3}
 --- !u!1 &1615834771

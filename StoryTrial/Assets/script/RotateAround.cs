@@ -48,9 +48,13 @@ public class RotateAround : MonoBehaviour {
         if (Input.touchCount <= 0) { return; }
         else if (Input.touchCount >= 1)
         {
+            
+
             if (Input.touches[0].phase == TouchPhase.Began)
             {
-                
+
+                TouchSound.playAudio = true;
+
                 if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
                 {
                     Debug.Log("onUI");

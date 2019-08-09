@@ -28,7 +28,7 @@ public class TurningFaster : MonoBehaviour {
 
     void ChangeAndStop()
     {
-        RotateAround.turnSpeed = RotateAround.turnSpeed + 20.0f;
+        RotateAround.turnSpeed = RotateAround.turnSpeed + 40.0f;
         ///this.gameObject.GetComponent<TurningFaster>().enabled = false;
     }
 

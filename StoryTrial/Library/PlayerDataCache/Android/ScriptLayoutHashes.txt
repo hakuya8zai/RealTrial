@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/user/Desktop/AlphaTest_0729_9.apk
+C:/Users/user/Desktop/BinaryCube_Alpha_ver1.1.apk
 SceneListBegin?
 Assets/Chapters/Chapter00.unity
 Assets/Chapters/Chap_1/Chapter01.unity
@@ -33,6 +33,16 @@ Assets/Chapters/Chap_3/Chapter27.unity
 Assets/Chapters/Chap_3/Chapter28.unity
 Assets/Chapters/Chap_3/Chapter29.unity
 Assets/Chapters/Chap_3/Chapter30.unity
+Assets/Chapters/Chap_4/Chapter31.unity
+Assets/Chapters/Chap_4/Chapter32.unity
+Assets/Chapters/Chap_4/Chapter33.unity
+Assets/Chapters/Chap_4/Chapter34.unity
+Assets/Chapters/Chap_4/Chapter35.unity
+Assets/Chapters/Chap_4/Chapter36.unity
+Assets/Chapters/Chap_4/Chapter37.unity
+Assets/Chapters/Chap_4/Chapter38.unity
+Assets/Chapters/Chap_4/Chapter39.unity
+Assets/Chapters/Chap_4/Chapter40.unity
 SceneListEnd?
 1937476c0725fa82ae2af145f590d299 Assembly-CSharp.dll:.TextChange
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -56,6 +66,7 @@ e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventH
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.CallbackExecutor
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.Editor.dll:UnityEngine.Advertisements.Placeholder
 a6f41ac1000cb2d6e15278f66f96a2ed Assembly-CSharp.dll:.UVScroller_C
+8123edcb08882156db42a0772d56b8f1 Assembly-CSharp.dll:.TouchSound
 d3f820b25a8a595da835d851283bb0da Assembly-CSharp.dll:.AdTest
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -123,6 +134,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+c4e63047937e90e887b23306e3f9f222 Assembly-CSharp.dll:.ColorChange
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 780e8f682b3221346c034a6712a0fd25 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
