@@ -374,6 +374,7 @@
     <Compile Include="Assets\script\UI\UIFollow.cs" />
     <Compile Include="Assets\sound\TouchSound.cs" />
     <Compile Include="Assets\SpriteGhostTrailRenderer\ActionCode2D\Scripts\Renderers\SpriteGhostTrailRenderer.cs" />
+    <Compile Include="Assets\tutorial\TutorialManage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Demigiant\DOTween\DOTween.XML" />

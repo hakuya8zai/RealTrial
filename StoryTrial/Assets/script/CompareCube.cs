@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class CompareCube : MonoBehaviour {
 
@@ -26,6 +27,7 @@ public class CompareCube : MonoBehaviour {
         {
             if (this.CompareTag("filled"))
             {
+                transform.DOShakeScale(0.2f, new Vector3(1, 1, 0));
                 skin.material = new Material(offskin);
                /// LightOn();
                 BoardsInst.BornCall = true;

@@ -21,6 +21,7 @@ public class RotateAround : MonoBehaviour {
     
     private void Awake()
     {
+        turnSpeed = 80.0f;
     }
 
     void Start () {
@@ -28,7 +29,7 @@ public class RotateAround : MonoBehaviour {
         coreCube.tag = ("core");
         sideCube.tag = ("side");
         GG = false;
-        turnSpeed = 80.0f;
+        
 
         InvokeRepeating("SideTurn", 1.0f, 0.000011f);
     }

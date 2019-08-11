@@ -9,6 +9,9 @@ public class SelectButtoms : MonoBehaviour {
     public GameObject pauseCanvas;
     public int Key;
     public int Lock;
+
+
+
     private void Awake()
     {
         Key = PlayerPrefs.GetInt("saveLevel");

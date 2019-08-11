@@ -16,6 +16,7 @@ public class GameManagement : MonoBehaviour {
     
 
     void Awake() {
+
         Time.timeScale = 1.0f;
 
         AdTest.adsCount = PlayerPrefs.GetInt("HP");
@@ -23,7 +24,6 @@ public class GameManagement : MonoBehaviour {
 
     private void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -77,7 +77,14 @@ public class GameManagement : MonoBehaviour {
         {
             PlayerPrefs.SetInt("saveLevel", levels);
         }
-        SceneManager.LoadScene(levels);
+        if(levels>40)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            SceneManager.LoadScene(levels);
+        }
     }
 
     public static void OnEnable()
