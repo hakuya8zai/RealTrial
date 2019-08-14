@@ -373,6 +373,7 @@
     <Compile Include="Assets\script\UI\TextManager.cs" />
     <Compile Include="Assets\script\UI\UIFollow.cs" />
     <Compile Include="Assets\sound\TouchSound.cs" />
+    <Compile Include="Assets\Spoil\SpoilManager.cs" />
     <Compile Include="Assets\SpriteGhostTrailRenderer\ActionCode2D\Scripts\Renderers\SpriteGhostTrailRenderer.cs" />
     <Compile Include="Assets\tutorial\TutorialManage.cs" />
   </ItemGroup>

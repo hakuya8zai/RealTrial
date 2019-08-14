@@ -12,11 +12,11 @@ public class GameManagement : MonoBehaviour {
     /// saveLevel為儲存最高關卡數
     /// </summary>
     public static bool ChangeCount = true;
-
+    public static int ShadowHp = 5;
     
 
     void Awake() {
-
+        ShadowHp = 5;
         Time.timeScale = 1.0f;
 
         AdTest.adsCount = PlayerPrefs.GetInt("HP");
@@ -56,20 +56,13 @@ public class GameManagement : MonoBehaviour {
 
     public static void Reload()
     {
-        AdTest.adsCount = PlayerPrefs.GetInt("HP");
-        AdTest.adsCount = AdTest.adsCount-1;
-        PlayerPrefs.SetInt("HP", AdTest.adsCount);
-        print(AdTest.adsCount);
-        if (AdTest.adsCount <= 0)
-        {
-            AdTest.adsCount = 5;
-            PlayerPrefs.SetInt("HP", AdTest.adsCount);
-            AdTest.Inst.AdrealTest();
-        }
+        ShadowHp--;
         SceneManager.LoadScene(levels);
     }
     public static void Nextload()
     {
+        SpoilManager.spoilKey = false;
+
         DeadBodyManager.ClearBody();
         levels++;
         int a = PlayerPrefs.GetInt("saveLevel");
@@ -84,6 +77,16 @@ public class GameManagement : MonoBehaviour {
         else
         {
             SceneManager.LoadScene(levels);
+        }
+
+        AdTest.adsCount = PlayerPrefs.GetInt("HP");
+        AdTest.adsCount = AdTest.adsCount - 1;
+        PlayerPrefs.SetInt("HP", AdTest.adsCount);
+        if (AdTest.adsCount <= 0)
+        {
+            AdTest.adsCount = 5;
+            PlayerPrefs.SetInt("HP", AdTest.adsCount);
+            AdTest.Inst.AdrealTest();
         }
     }
 

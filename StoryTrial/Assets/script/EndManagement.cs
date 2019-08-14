@@ -6,9 +6,13 @@ using DG.Tweening;
 public class EndManagement : MonoBehaviour {
     public GameObject[] boards = new GameObject[3];
     public GameObject[] end = new GameObject[1];
+    public GameObject theSpoiler;
+    public static GameObject spoiler;
+
     private int s = 0;
     // Use this for initialization
     void Start () {
+        spoiler = theSpoiler;
         BornTweenA();
     }
 	

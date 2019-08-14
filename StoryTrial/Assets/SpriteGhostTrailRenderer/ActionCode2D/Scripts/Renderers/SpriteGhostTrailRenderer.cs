@@ -38,7 +38,7 @@ namespace ActionCode2D.Renderers
 
         private void Update()
         {
-            ghosts = 3 * (AdTest.adsCount-1) +3;
+            ghosts = 3 * (GameManagement.ShadowHp-1) +3;
 
             _currentTime += Time.deltaTime;
             if (_currentTime > updateInterval)

@@ -20,7 +20,7 @@ public class TutorialManage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RotateAround.turnSpeed = RotateAround.turnSpeed - 40.0f;
+        thePoint.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,6 +35,8 @@ public class TutorialManage : MonoBehaviour
                 if (complete == true)
                 {
                     complete = false;
+                    thePoint.SetActive(true);
+                    Stop();
                     ToMove();
                 }
             }
@@ -50,7 +52,7 @@ public class TutorialManage : MonoBehaviour
             if (start == false)
             {
                 start = true;
-                RotateAround.turnSpeed = RotateAround.turnSpeed + 40.0f;
+                RotateAround.turnSpeed = 80.0f;
                 for (int s = 0; s < old.Length; s++)
                 {
                     old[s].SetActive(false);
@@ -76,12 +78,26 @@ public class TutorialManage : MonoBehaviour
 
     void ToMove()
     {
-        thePoint.transform.DOMove(new Vector3(0, +2.5f, 0), 0.8f).From(true);
-        Invoke(("Zero"), 1.0f);
+        thePoint.transform.DOMove(new Vector3(0, -2.5f, 0), 0.4f).From(true);
+        Invoke(("Zero"), 0.5f);
+        
     }
 
     void Zero()
     {
+        thePoint.SetActive(false);
         complete = true;
+        Continue();
     }
+
+    void Stop()
+    {
+        RotateAround.turnSpeed = 0.0f;
+
+    }
+    void Continue()
+    {
+        RotateAround.turnSpeed = 80.0f;
+    }
+
 }

@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/user/Desktop/BinaryCube_Alpha_ver2.apk
+C:/Users/user/Desktop/BinaryCube_Alpha_ver2.1.apk
 SceneListBegin?
 Assets/Chapters/Chapter00.unity
 Assets/Chapters/Chap_1/Chapter01.unity
@@ -294,6 +294,7 @@ eb2305b989cf8cacb72b76d63b3f9569 Assembly-CSharp.dll:.CompareCube
 116316fd668846191729304be77a5496 Assembly-CSharp.dll:.ItemInst
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TurningNormal
 ee0cef6caaac8ae485bfa82f000f0f7b Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
+2229d45cf805bd5aee5e97655d19c38a Assembly-CSharp.dll:.TutorialManage
 425d92ac71ee31abd9c68cc6dbbc6263 DOTweenPro.dll:DG.Tweening.DOTweenPath
 d452b4ce4b4cca771c54091cc2623c68 DOTweenPro.dll:DG.Tweening.DOTweenVisualManager
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
@@ -375,4 +376,3 @@ ffd8816d88b11c11d24af998cf7f948a Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-2229d45cf805bd5aee5e97655d19c38a Assembly-CSharp.dll:.TutorialManage

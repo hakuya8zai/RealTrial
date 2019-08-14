@@ -29,7 +29,7 @@ public class AdTest : MonoBehaviour {
     public void CheckRewardIsReady()
     {
         if (IsAdReady) return;
-        if (Advertisement.IsReady("BreakTimeVideo"))
+        if (Advertisement.IsReady("BreakTimeVideo")&&Advertisement.IsReady("SpoilerAd"))
         {
             IsAdReady = true;
         }
@@ -40,7 +40,16 @@ public class AdTest : MonoBehaviour {
         if (IsAdReady)
         {
             var options = new ShowOptions { resultCallback = HandleShowResult };
-            Advertisement.Show("BreakTimeVideo", options);
+            if(SpoilManager.CanSkip == true)
+            {
+                Advertisement.Show("BreakTimeVideo", options);
+            }
+            else if(SpoilManager.CanSkip == false)
+            {
+                Advertisement.Show("SpoilerAd", options);
+                SpoilManager.CanSkip = true;
+            }
+
             IsAdReady = false;
             this.onAdRewardCallBack = callBack;
         }
@@ -81,8 +90,6 @@ public class AdTest : MonoBehaviour {
             if (AdTest.Inst.IsAdReady)
             {
                 AdTest.Inst.ShowRewardAD(GiveResult);
-                adsCount = 5;
-                PlayerPrefs.SetInt("HP", adsCount);
             }
             else
             {

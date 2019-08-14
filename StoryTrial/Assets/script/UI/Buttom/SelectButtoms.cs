@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SelectButtoms : MonoBehaviour {
     public GameObject removeObject;
     public GameObject playingCanvas;
+    public GameObject HelpCanvas;
     public GameObject pauseCanvas;
     public int Key;
     public int Lock;
@@ -34,6 +35,21 @@ public class SelectButtoms : MonoBehaviour {
         removeObject.SetActive(false);
         UIManager.UIOpen = false;
         playingCanvas.SetActive(true);
+        HelpCanvas.SetActive(true);
+
+
+        SpoilManager.spoilKey = false;
+
+
+        AdTest.adsCount = PlayerPrefs.GetInt("HP");
+        AdTest.adsCount = AdTest.adsCount - 1;
+        PlayerPrefs.SetInt("HP", AdTest.adsCount);
+        if (AdTest.adsCount <= 0)
+        {
+            AdTest.adsCount = 5;
+            PlayerPrefs.SetInt("HP", AdTest.adsCount);
+            AdTest.Inst.AdrealTest();
+        }
     }
     public void ChapterOneButtom()
     {
