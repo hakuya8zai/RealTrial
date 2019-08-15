@@ -30,7 +30,6 @@ public class UIManager : MonoBehaviour {
     }
     public void StartEvent()
     {
-        print("shittt");
         UIOpen = true;
         PauseCanvas.SetActive(false);
         SelectCanvas.SetActive(true);

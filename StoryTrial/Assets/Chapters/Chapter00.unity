@@ -372,6 +372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 405616486}
   - component: {fileID: 405616485}
+  - component: {fileID: 405616487}
   m_Layer: 0
   m_Name: GameManagement
   m_TagString: Untagged
@@ -405,9 +406,27 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1512920043}
+  - {fileID: 1779017851}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &405616487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405616484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed50169f9950ab4483c58184dc93748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boards:
+  - {fileID: 1779017850}
+  end:
+  - {fileID: 1779017850}
+  theSpoiler: {fileID: 1779017850}
 --- !u!114 &431419484 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6480323870658565852, guid: d8e1cb72de765f44d87f869b672dc5f1,
@@ -1669,7 +1688,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ad & help
+  m_Text: Watch ad :p
 --- !u!222 &1491130223
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1913,7 +1932,7 @@ PrefabInstance:
     - target: {fileID: 313123423050021197, guid: d8e1cb72de765f44d87f869b672dc5f1,
         type: 3}
       propertyPath: m_Volume
-      value: 0.3
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2227209229953161184, guid: d8e1cb72de765f44d87f869b672dc5f1,
         type: 3}
@@ -1955,6 +1974,11 @@ PrefabInstance:
       propertyPath: HelpCanvas
       value: 
       objectReference: {fileID: 455678588}
+    - target: {fileID: 4324332784845081414, guid: d8e1cb72de765f44d87f869b672dc5f1,
+        type: 3}
+      propertyPath: bgm
+      value: 
+      objectReference: {fileID: 1980767107}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8e1cb72de765f44d87f869b672dc5f1, type: 3}
 --- !u!1 &1513643782 stripped
@@ -2297,6 +2321,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746859702}
   m_CullTransparentMesh: 0
+--- !u!1 &1779017850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779017851}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1779017851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779017850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405616486}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1780811232 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5096118103429099490, guid: d8e1cb72de765f44d87f869b672dc5f1,
@@ -2430,7 +2484,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.69411767, g: 0.972549, b: 0.9490196, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2578,6 +2632,12 @@ MonoBehaviour:
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1980767107 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 313123423050021197, guid: d8e1cb72de765f44d87f869b672dc5f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1513643781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2028052796 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 923463327199878006, guid: d8e1cb72de765f44d87f869b672dc5f1,

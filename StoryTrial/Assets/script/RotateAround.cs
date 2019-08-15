@@ -21,6 +21,7 @@ public class RotateAround : MonoBehaviour {
     
     private void Awake()
     {
+
         turnSpeed = 80.0f;
     }
 

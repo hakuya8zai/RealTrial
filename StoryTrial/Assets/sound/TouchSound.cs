@@ -6,6 +6,8 @@ public class TouchSound : MonoBehaviour
 {
     public AudioSource beatOne;
     public AudioSource beatTwo;
+    public AudioSource bgm;
+    public static AudioSource theBGM;
     private bool One = true;
     public static bool playAudio = false;
 
@@ -13,6 +15,7 @@ public class TouchSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        theBGM = bgm;
         
     }
 

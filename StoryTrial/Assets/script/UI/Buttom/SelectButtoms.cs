@@ -15,12 +15,13 @@ public class SelectButtoms : MonoBehaviour {
 
     private void Awake()
     {
+        
         Key = PlayerPrefs.GetInt("saveLevel");
         if (Key <= 1)
         {
             Key = 1;
             PlayerPrefs.SetInt("saveLevel", Key);
-            PlayerPrefs.SetInt("HP", 11);
+            PlayerPrefs.SetInt("HP", 5);
             AdTest.adsCount = PlayerPrefs.GetInt("HP");
         }
     }

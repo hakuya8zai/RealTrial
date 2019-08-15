@@ -92,7 +92,7 @@ public class TutorialManage : MonoBehaviour
 
     void Stop()
     {
-        RotateAround.turnSpeed = 0.0f;
+        RotateAround.turnSpeed = 20.0f;
 
     }
     void Continue()
