@@ -2828,6 +2828,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Message: {fileID: 1417667609}
+  face:
+  - {fileID: 1960181146}
+  - {fileID: 2097949879}
+  - {fileID: 671914659}
+  - {fileID: 1645760263}
+  - {fileID: 938454952}
+  - {fileID: 1923063120}
+  first: 0
 --- !u!1 &1176119484
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2018.4.5f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -346,6 +348,7 @@
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+    <Compile Include="Assets\icon\Connect.cs" />
     <Compile Include="Assets\ItemInst.cs" />
     <Compile Include="Assets\ParticleLight\Scripts\UVScroller_C.cs" />
     <Compile Include="Assets\ScoreManage.cs" />
@@ -357,6 +360,7 @@
     <Compile Include="Assets\script\CompareCube.cs" />
     <Compile Include="Assets\script\DeadBodyManager.cs" />
     <Compile Include="Assets\script\effect\dotest.cs" />
+    <Compile Include="Assets\script\effect\FloatEffect.cs" />
     <Compile Include="Assets\script\EndJudge.cs" />
     <Compile Include="Assets\script\EndManagement.cs" />
     <Compile Include="Assets\script\GameManagement.cs" />

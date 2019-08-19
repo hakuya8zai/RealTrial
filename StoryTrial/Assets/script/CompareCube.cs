@@ -19,7 +19,10 @@ public class CompareCube : MonoBehaviour {
         this.gameObject.tag = ("unfill");
     }
     void Start () {
-	}
+
+        BoxCollider Trans = this.GetComponent<BoxCollider>();
+        Trans.size = new Vector3(1.2f, 1.2f, 1.2f);
+    }
 	
 	// Update is called once per frame
 	void Update () {

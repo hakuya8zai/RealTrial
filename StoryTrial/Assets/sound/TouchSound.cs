@@ -8,6 +8,8 @@ public class TouchSound : MonoBehaviour
     public AudioSource beatTwo;
     public AudioSource bgm;
     public static AudioSource theBGM;
+    public static AudioSource theBeatOne;
+    public static AudioSource theBeatTwo;
     private bool One = true;
     public static bool playAudio = false;
 
@@ -16,7 +18,8 @@ public class TouchSound : MonoBehaviour
     void Start()
     {
         theBGM = bgm;
-        
+        theBeatOne = beatOne;
+        theBeatTwo = beatTwo;
     }
 
     // Update is called once per frame

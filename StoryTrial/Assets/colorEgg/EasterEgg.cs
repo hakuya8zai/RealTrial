@@ -7,12 +7,21 @@ using DG.Tweening;
 public class EasterEgg : MonoBehaviour
 {
     public Text Message;
+    public GameObject[] face;
+    public bool first;
     // Start is called before the first frame update
     void Start()
     {
 
         Message.DOText("SHH!",1.0f);
         Invoke("TextOne", 3.0f);
+        if(first == false)
+        {
+            for(int i = 0; i < 6; i++)
+            {
+                face[i].SetActive(false);
+            }
+        }
 
     }
 
@@ -48,10 +57,11 @@ public class EasterEgg : MonoBehaviour
         Message.text = (" ");
         Message.DOText("Now...     Destroy this!", 4.0f);
         Invoke("MessageOver", 10.0f);
+        first = false;
     }
 
     void MessageOver()
     {
-        TouchSound.theBGM.volume = 0.25f;
+        TouchSound.theBGM.volume = 0.5f;
     }
 }

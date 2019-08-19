@@ -15,11 +15,15 @@ public class UIManager : MonoBehaviour {
     public GameObject SelectCanvas;
     private GameObject removeObject;
     public GameObject StartCanvas;
-
+    public GameObject SettingCanvas;
+    public static GameObject theStartCanvas;
+    public static GameObject thePauseCanvas;
 
     // Use this for initialization
     void Start () {
         theCheckCanvas = CheckCanvas;
+        theStartCanvas = StartCanvas;
+        thePauseCanvas = PauseCanvas;
     }
 	
 	// Update is called once per frame
@@ -35,6 +39,12 @@ public class UIManager : MonoBehaviour {
         SelectCanvas.SetActive(true);
         StartCanvas.SetActive(false);
     }
+    public void SettingEvent()
+    {
+        UIOpen = true;
+        SettingCanvas.SetActive(true);
+    }
+
     public void PauseEvent()
     {
         
@@ -47,6 +57,14 @@ public class UIManager : MonoBehaviour {
         CheckCanvas.SetActive(true);
         UIOpen = true;
         GameManagement.OnDisable();
+    }
+
+    public void CheckCancel()
+    {
+        CheckCanvas.SetActive(false);
+        UIOpen = false;
+        GameManagement.OnEnable();
+
     }
 
     public void ContinueEvent()

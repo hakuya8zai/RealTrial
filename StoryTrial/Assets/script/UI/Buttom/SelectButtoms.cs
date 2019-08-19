@@ -11,8 +11,8 @@ public class SelectButtoms : MonoBehaviour {
     public int Key;
     public int Lock;
 
-
-
+    public static GameObject thePlayingCanvas;
+    public static GameObject theHelpCanvas;
     private void Awake()
     {
         
@@ -28,6 +28,8 @@ public class SelectButtoms : MonoBehaviour {
 
     private void Start()
     {
+        thePlayingCanvas = playingCanvas;
+        theHelpCanvas = HelpCanvas;
     }
 
     public void SelectOver()
@@ -43,8 +45,6 @@ public class SelectButtoms : MonoBehaviour {
 
 
         AdTest.adsCount = PlayerPrefs.GetInt("HP");
-        AdTest.adsCount = AdTest.adsCount - 1;
-        PlayerPrefs.SetInt("HP", AdTest.adsCount);
         if (AdTest.adsCount <= 0)
         {
             AdTest.adsCount = 5;

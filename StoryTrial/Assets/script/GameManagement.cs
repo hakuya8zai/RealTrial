@@ -73,6 +73,7 @@ public class GameManagement : MonoBehaviour {
         if(levels>40)
         {
             SceneManager.LoadScene(0);
+            UIManager.theStartCanvas.SetActive(true);
         }
         else
         {

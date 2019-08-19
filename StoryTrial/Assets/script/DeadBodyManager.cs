@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class DeadBodyManager : MonoBehaviour
 {
@@ -14,11 +15,14 @@ public class DeadBodyManager : MonoBehaviour
     public static bool blackBorn = false;
     public static bool whiteBorn = false;
 
+    public GameObject hint;
+    public static GameObject theHint;
 
+    private bool settingFirst = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+        theHint = hint;
         blackBorn = false;
         whiteBorn = false;
     }
@@ -37,8 +41,22 @@ public class DeadBodyManager : MonoBehaviour
             blackBorn = false;
         }
         
+        if(BodyCount > 3)
+        {
+            if (settingFirst == true)
+            {
+                settingFirst = false;
+                hint.transform.DOShakeScale(1.0f, new Vector3(1.5f, 1.2f, 0.1f));
+                Invoke(("HintDot"), 2.0f);
+            }
 
+        }
         
+    }
+
+    public void HintDot()
+    {
+        settingFirst = true;
     }
 
     public void InstWhiteBody()
